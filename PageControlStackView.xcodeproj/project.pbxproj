@@ -7,20 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52A387371FB4CA3C005DF0E0 /* StackViewSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A387361FB4CA3C005DF0E0 /* StackViewSegmentedControl.swift */; };
 		52F0F9751F3C177900139558 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0F9741F3C177900139558 /* AppDelegate.swift */; };
-		52F0F9771F3C177900139558 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0F9761F3C177900139558 /* ViewController.swift */; };
-		52F0F97A1F3C177900139558 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F0F9781F3C177900139558 /* Main.storyboard */; };
+		52F0F9771F3C177900139558 /* PageControllerStackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F0F9761F3C177900139558 /* PageControllerStackViewController.swift */; };
 		52F0F97C1F3C177900139558 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F0F97B1F3C177900139558 /* Assets.xcassets */; };
-		52F0F97F1F3C177900139558 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F0F97D1F3C177900139558 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		52F0F9711F3C177900139558 /* PageControllerStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageControllerStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		52A387361FB4CA3C005DF0E0 /* StackViewSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewSegmentedControl.swift; sourceTree = "<group>"; };
+		52F0F9711F3C177900139558 /* PageControlStackView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PageControlStackView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F0F9741F3C177900139558 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52F0F9761F3C177900139558 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52F0F9791F3C177900139558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52F0F9761F3C177900139558 /* PageControllerStackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControllerStackViewController.swift; sourceTree = "<group>"; };
 		52F0F97B1F3C177900139558 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		52F0F97E1F3C177900139558 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F0F9801F3C177900139558 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +44,7 @@
 		52F0F9721F3C177900139558 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				52F0F9711F3C177900139558 /* PageControllerStackView.app */,
+				52F0F9711F3C177900139558 /* PageControlStackView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,22 +52,29 @@
 		52F0F9731F3C177900139558 /* PageControllerStackView */ = {
 			isa = PBXGroup;
 			children = (
+				52F0F9861F3C1B1D00139558 /* User Interface */,
 				52F0F9741F3C177900139558 /* AppDelegate.swift */,
-				52F0F9761F3C177900139558 /* ViewController.swift */,
-				52F0F9781F3C177900139558 /* Main.storyboard */,
 				52F0F97B1F3C177900139558 /* Assets.xcassets */,
-				52F0F97D1F3C177900139558 /* LaunchScreen.storyboard */,
 				52F0F9801F3C177900139558 /* Info.plist */,
 			);
 			path = PageControllerStackView;
 			sourceTree = "<group>";
 		};
+		52F0F9861F3C1B1D00139558 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				52F0F9761F3C177900139558 /* PageControllerStackViewController.swift */,
+				52A387361FB4CA3C005DF0E0 /* StackViewSegmentedControl.swift */,
+			);
+			name = "User Interface";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		52F0F9701F3C177900139558 /* PageControllerStackView */ = {
+		52F0F9701F3C177900139558 /* PageControlStackView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 52F0F9831F3C177900139558 /* Build configuration list for PBXNativeTarget "PageControllerStackView" */;
+			buildConfigurationList = 52F0F9831F3C177900139558 /* Build configuration list for PBXNativeTarget "PageControlStackView" */;
 			buildPhases = (
 				52F0F96D1F3C177900139558 /* Sources */,
 				52F0F96E1F3C177900139558 /* Frameworks */,
@@ -79,9 +84,9 @@
 			);
 			dependencies = (
 			);
-			name = PageControllerStackView;
+			name = PageControlStackView;
 			productName = PageControllerStackView;
-			productReference = 52F0F9711F3C177900139558 /* PageControllerStackView.app */;
+			productReference = 52F0F9711F3C177900139558 /* PageControlStackView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -91,17 +96,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Jeff Mew";
 				TargetAttributes = {
 					52F0F9701F3C177900139558 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = H9VG62MSLG;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 52F0F96C1F3C177900139558 /* Build configuration list for PBXProject "PageControllerStackView" */;
+			buildConfigurationList = 52F0F96C1F3C177900139558 /* Build configuration list for PBXProject "PageControlStackView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +120,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				52F0F9701F3C177900139558 /* PageControllerStackView */,
+				52F0F9701F3C177900139558 /* PageControlStackView */,
 			);
 		};
 /* End PBXProject section */
@@ -124,9 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F0F97F1F3C177900139558 /* LaunchScreen.storyboard in Resources */,
 				52F0F97C1F3C177900139558 /* Assets.xcassets in Resources */,
-				52F0F97A1F3C177900139558 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,31 +141,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F0F9771F3C177900139558 /* ViewController.swift in Sources */,
+				52A387371FB4CA3C005DF0E0 /* StackViewSegmentedControl.swift in Sources */,
+				52F0F9771F3C177900139558 /* PageControllerStackViewController.swift in Sources */,
 				52F0F9751F3C177900139558 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		52F0F9781F3C177900139558 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52F0F9791F3C177900139558 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		52F0F97D1F3C177900139558 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52F0F97E1F3C177900139558 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		52F0F9811F3C177900139558 /* Debug */ = {
@@ -174,7 +160,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -182,7 +170,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -225,7 +217,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -233,7 +227,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -265,10 +263,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9VG62MSLG;
 				INFOPLIST_FILE = PageControllerStackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mew.jeff.PageControllerStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -278,17 +278,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = H9VG62MSLG;
 				INFOPLIST_FILE = PageControllerStackView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mew.jeff.PageControllerStackView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		52F0F96C1F3C177900139558 /* Build configuration list for PBXProject "PageControllerStackView" */ = {
+		52F0F96C1F3C177900139558 /* Build configuration list for PBXProject "PageControlStackView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52F0F9811F3C177900139558 /* Debug */,
@@ -297,13 +299,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		52F0F9831F3C177900139558 /* Build configuration list for PBXNativeTarget "PageControllerStackView" */ = {
+		52F0F9831F3C177900139558 /* Build configuration list for PBXNativeTarget "PageControlStackView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				52F0F9841F3C177900139558 /* Debug */,
 				52F0F9851F3C177900139558 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

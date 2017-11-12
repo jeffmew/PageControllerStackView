@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  PageControllerStackView
+//  PageControlStackView
 //
 //  Created by Jeff Mew on 2017-08-09.
 //  Copyright © 2017 Jeff Mew. All rights reserved.
@@ -13,9 +13,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        window = UIWindow()
+        
+        let redViewController = UIViewController()
+        redViewController.view.backgroundColor = .red
+        let orangeViewController = UIViewController()
+        orangeViewController.view.backgroundColor = .orange
+        let yellowViewControlelr = UIViewController()
+        yellowViewControlelr.view.backgroundColor = .yellow
+
+        let viewControllers = [redViewController, orangeViewController, yellowViewControlelr]
+        
+        let viewController = PageControlStackViewController(viewControllers: viewControllers)
+        window!.rootViewController = viewController
+        window!.makeKeyAndVisible()
         return true
     }
 
